@@ -48,6 +48,7 @@ docker run -it -p 8000:8000 -p 8001:8001 -p 8002:8002 -v ./model_repository:/mod
 ```
 
 This starts the Triton Server, and should appear like this:
+![triton-server-running](https://github.com/monaldoj-db/mlflow-to-triton/assets/158090744/0eda0153-ec3a-4b30-8fb3-a5e97e9e5492)
 
 
 Now your model is being served to `http` (on port 8000) and `grpc` (on port 8001) endpoints.
