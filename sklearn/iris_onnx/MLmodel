@@ -1,0 +1,21 @@
+databricks_runtime: 14.3.x-cpu-ml-scala2.12
+flavors:
+  onnx:
+    code: null
+    data: model.onnx
+    onnx_session_options: null
+    onnx_version: 1.15.0
+    providers:
+    - CUDAExecutionProvider
+    - CPUExecutionProvider
+  python_function:
+    data: model.onnx
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.onnx
+    python_version: 3.10.12
+mlflow_version: 2.9.2
+model_size_bytes: 1537
+model_uuid: 1ef99caee2604d68ae7f3542492deb7d
+utc_time_created: '2024-02-23 20:20:24.578861'
